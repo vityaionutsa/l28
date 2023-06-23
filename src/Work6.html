@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <ul>
+      <li ng-repeat="num in numbers">{{ num }}</li>
+    </ul>
+    <p>Сума: {{ sum }}</p>
+    <input type="number" ng-model="newNumber">
+    <button ng-click="addNumber()">Додати число</button>
+  </div>
+      
+	<script src="./Work6.js"></script>
+</body>
+</html>

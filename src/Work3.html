@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Work3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+	<input type="checkbox" ng-model="showOnlyWithP" id="filterCheckbox">
+	<label for="filterCheckbox">Показати лише країни з літерою «п» або «П»</label>
+	
+	<br><br>
+	
+	<ul>
+		<li ng-repeat="country in countries | filter: filterCountries">{{ country }}</li>
+	</ul>
+    <script src="./Work3.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Work2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+	<input type="text" ng-model="newCountry" placeholder="Додати країну">
+	<button ng-click="addCountry()">Додати</button>
+	
+	<br><br>
+	
+	<input type="text" ng-model="removeCountryName" placeholder="Видалити країну за назвою">
+	<button ng-click="removeCountry()">Видалити</button>
+	
+	<br><br>
+	
+	<ul>
+		<li ng-repeat="country in countries">{{ country }}</li>
+	</ul>
+      
+    <script src="./Work2.js"></script>
+</body>
+</html>
